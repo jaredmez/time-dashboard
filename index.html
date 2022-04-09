@@ -5,76 +5,157 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <title>Time Tracking Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  
+  <div class="title-ctn">
+    <div class="title-card">
+      <div class="user-ctn">
+        <div class="user-img">
+          <img class="user-image" src="./images/image-jeremy.png" alt="user-image">
+        </div>
+        <div class="user-info">
+          <p>Report for</p>
+          <span>Jeremy Robson</span>
+        </div>
+      </div>
+      <div class="button-ctn">
+        <div>Daily</div>
+        <div>Weekly</div>
+        <div>Monthly</div>
+      </div>
+    </div>
+  </div>
 
-  Report for
-  Jeremy Robson
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(15, 100%, 70%)">
+      <div class="card-logo">
+        <img src="./images/icon-work.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Work</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">32hrs</div>
+          <div class="previous-time">Last Week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Daily
-  Weekly
-  Monthly
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(195, 74%, 62%)">
+      <div class="card-logo">
+        <img src="./images/icon-play.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Play</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">10hrs</div>
+          <div class="previous-time">Last Week - 8hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(348, 100%, 68%)">
+      <div class="card-logo">
+        <img src="./images/icon-study.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Study</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">4hrs</div>
+          <div class="previous-time">Last Week - 7hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(145, 58%, 55%)">
+      <div class="card-logo">
+        <img src="./images/icon-exercise.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Exercise</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">4hrs</div>
+          <div class="previous-time">Last Week - 5hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(264, 64%, 52%)">
+      <div class="card-logo">
+        <img src="./images/icon-social.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Social</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">5hrs</div>
+          <div class="previous-time">Last Week - 10hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+  <div class="tracker-ctn">
+    <div class="tracker-card" style="background-color: hsl(43, 84%,65%)">
+      <div class="card-logo">
+        <img src="./images/icon-self-care.svg" alt="card-logo" class="logo">
+      </div>
+      <div class="tracker-detail">
+        <div class="tracker-header">
+          <div class="activity-name">Self Care</div>
+          <div class="more-menu-ctn">
+            <img src="./images/icon-ellipsis.svg" alt="more-menu" class="menu-image">
+          </div>
+        </div>
+        <div class="activity-detail">
+          <div class="current-time">2hrs</div>
+          <div class="previous-time">Last Week - 2hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Jared</a>.
   </div>
 </body>
 </html>

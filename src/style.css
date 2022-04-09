@@ -1,0 +1,117 @@
+* {
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;;
+  color: hsl(236, 100%, 87%);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  padding: 10px;
+}
+
+.title-card {
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  margin: 20px 10px;
+}
+
+.user-ctn {
+  background-color: hsl(235, 45%, 61%);
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+
+.user-image {
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 65px;
+}
+
+.user-info{
+  padding: 0px 15px;
+}
+
+.user-info p {
+  margin-bottom: 5px;
+}
+
+.user-info span {
+  font-size: 18px;
+}
+
+.button-ctn {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.tracker-ctn {
+  height: auto;
+  margin: 0 10px 50px 10px;
+}
+
+.tracker-card {
+  position: relative;
+  border-radius: 10px;
+  margin: 0px 0px 35px 0px;
+
+}
+
+.card-logo {
+  right: 10px;
+  position: absolute;
+  height: 55%;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  top: -5px;
+  height: 100%;
+}
+
+.tracker-detail {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  padding: 20px 20px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+.tracker-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+  
+}
+
+.activity-name {
+  color: white;
+}
+
+.current-time {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+
+
+@media only screen and (max-width: 375px) {
+  .user-ctn {
+    display: flex;
+    align-items: center;
+  }
+
+  .activity-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
