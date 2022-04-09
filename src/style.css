@@ -138,6 +138,15 @@ body {
   .user-ctn {
     height: 315px;
   }
+
+  .user-img {
+    margin-bottom: 45px;
+  }
+
+  .user-info span {
+    font-size: 36px;
+    font-weight: 300;
+  }
   .cards-ctn {
     display: flex;
     flex-wrap: wrap;
