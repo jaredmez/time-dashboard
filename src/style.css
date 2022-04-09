@@ -103,7 +103,7 @@ body {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 380px) {
   .user-ctn {
     display: flex;
     align-items: center;
@@ -114,4 +114,26 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+}
+
+@media only screen and (min-width: 380px) {
+  .dash-ctn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cards-ctn {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title-card {
+    width: 280px;
+  }
+  .tracker-card {
+    width: 280px;
+  }
+  .tracker-detail {
+    top: 40px;
+  }
+ 
 }
