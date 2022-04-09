@@ -130,7 +130,14 @@ body {
 
     /* flex-wrap: wrap; */
   }
+  .title-card {
+    height: 490px;
+    margin: 0 10px 0 0;
+  }
 
+  .user-ctn {
+    height: 315px;
+  }
   .cards-ctn {
     display: flex;
     flex-wrap: wrap;
@@ -161,6 +168,18 @@ body {
 
   .tracker-header {
     padding: 5px 0px 5px;
+  }
+
+  .button-ctn {
+    padding-left: 30px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .button-ctn div {
+    margin-bottom: 20px;
   }
  
 }
