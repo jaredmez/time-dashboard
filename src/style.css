@@ -5,19 +5,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 
 body {
   background-color: hsl(226, 43%, 10%);
   padding: 10px;
+  height: 100vh;
+  display: flex;
+
 }
 
 .title-card {
   border-radius: 10px;
   background-color: hsl(235, 46%, 20%);
   margin: 20px 10px;
+  width: 250px;
 }
 
 .user-ctn {
@@ -60,7 +63,7 @@ body {
   position: relative;
   border-radius: 10px;
   margin: 0px 0px 35px 0px;
-
+  width: 250px;
 }
 
 .card-logo {
@@ -116,24 +119,48 @@ body {
   }
 }
 
-@media only screen and (min-width: 380px) {
-  .dash-ctn {
+@media only screen and (min-width: 600px) {
+  .dashboard-ctn {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+  }
+  .dashboard {
+    display: flex;
+
+    /* flex-wrap: wrap; */
   }
 
   .cards-ctn {
     display: flex;
     flex-wrap: wrap;
+    max-width: 820px;
+    justify-content: space-around;
   }
-  .title-card {
-    width: 280px;
+  .card-logo {
+    height: 35%;
   }
-  .tracker-card {
-    width: 280px;
+
+  .current-time {
+    font-size: 54px;
   }
+  .previous-time {
+    padding: 10px 0px;
+  }
+
+  .tracker-ctn {
+    margin-bottom: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+ 
   .tracker-detail {
-    top: 40px;
+    top: 44px;
+    padding: 25px 25px;
+  }
+
+  .tracker-header {
+    padding: 5px 0px 5px;
   }
  
 }
