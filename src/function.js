@@ -1,3 +1,5 @@
+import {getActivityTimes} from './helpers/getActivityTimes.js'
+
 let userData;
 fetch("../data.json")
   .then(res => res.json())
@@ -6,13 +8,25 @@ fetch("../data.json")
 
 let menuBtns = document.querySelectorAll('.menu-btn')
 
-menuBtns.forEach( elm => console.log(elm.innerText))
-console.log(menuBtns);
-
 const updateTimeFrameDisplay = timeFrame => {
-  console.log(userData)
-  console.log(userData[0].timeframes[`${timeFrame.toLowerCase()}`]) 
-  console.log(timeFrame)
+  let currentElements = document.querySelectorAll('.current-time');
+  let previousElements = document.querySelectorAll('.previous-time');
+  let activityTimes = getActivityTimes(timeFrame, userData);
+  
+  currentElements.forEach((elm, index) => {
+    elm.innerText = `${activityTimes[index].current}hrs`
+  })
+  previousElements.forEach((elm, index) => {
+    if (timeFrame === 'Daily') {
+      elm.innerText = `Yesterday - ${activityTimes[index].previous}hrs`
+    }
+    else if (timeFrame === 'Weekly') {
+      elm.innerText = `Last Week - ${activityTimes[index].previous}hrs`
+    } else {
+      elm.innerText = `Last Month - ${activityTimes[index].previous}hrs`
+    }
+    
+  })
 }
 
 const updateActiveButton = val => {
