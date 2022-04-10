@@ -54,6 +54,14 @@ body {
   justify-content: space-around;
 }
 
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn.active {
+  color: white;
+}
+
 .tracker-ctn {
   height: auto;
   margin: 0 10px 50px 10px;
@@ -187,7 +195,7 @@ body {
     justify-content: space-evenly;
   }
 
-  .button-ctn div {
+  .menu-btn {
     margin-bottom: 20px;
   }
  
