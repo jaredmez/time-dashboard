@@ -1,7 +1,8 @@
 import {getActivityTimes} from './helpers/getActivityTimes.js'
 
 let userData;
-fetch("../data.json")
+//fetch("../data.json")
+fetch("https://github.com/jaredmez/time-dashboard/blob/main/data.json")
   .then(res => res.json())
   .then(res => userData = res)
 
